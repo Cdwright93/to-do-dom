@@ -18,3 +18,9 @@ body {
     margin: auto;
     margin-top: 15px;
 }
+.ol {
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    list-style-type: none;
+}
