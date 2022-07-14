@@ -9,16 +9,16 @@ document
     todo.push(todoItem);
     todoListItem = document.createElement("li");
     todoListItem.innerHTML = todoItem;
-    let checkbox = document.createElement("input");
-    checkbox.type = "checkbox";
-    checkbox.className = "checkbox";
-    todoListItem.appendChild(checkbox);
-    checkbox.addEventListener("click", function (event) {
-      if (checkbox.checked) {
-        todoListItem.style.textDecoration = "line-through";
-      } else {
-        todoListItem.style.textDecoration = "none";
-      }
-    });
+    // let checkbox = document.createElement("input");
+    // checkbox.type = "checkbox";
+    // checkbox.className = "checkbox";
+    // todoListItem.appendChild(checkbox);
     todoList.appendChild(todoListItem);
   });
+document.getElementById("clear-button").addEventListener("click", () => {
+  removeAll();
+});
+function removeAll() {
+  todoList.innerHTML = "";
+  todo = [];
+}
